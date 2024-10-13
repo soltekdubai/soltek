@@ -2,8 +2,10 @@ source "https://rubygems.org"
 
 # gem "minima", "~> 2.5"
 # To upgrade, run `bundle update github-pages`.
-gem "jekyll", "~> 4.3.0"
+gem "jekyll", "~> 3.9.0"
 gem "liquid", "~> 5.0.0"
+
+
 
 #explicit 
 gem "csv"
