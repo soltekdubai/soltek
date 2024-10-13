@@ -1,16 +1,16 @@
 title: SolTek
 email: soltekdubai@protonmail.ch
-description: >- 
+description: >-
   Expert in solar power maintenance, repair, and consulting, with advanced monitoring of energy production and consumption applications.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://soltekdubai.github.io/soltek/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: soltekdubai
 
 # Build settings
-remote_theme: pages-themes/cayman@v0.2.0
+theme: jekyll-theme-cayman  # Using the Cayman theme locally
 plugins:
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
-  - jekyll-feed
+  - jekyll-feed  # To generate RSS feed
+  - jekyll-remote-theme  # For future remote theme use
 
 # Exclude from processing
 exclude:
