@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 # gem "minima", "~> 2.5"
 # To upgrade, run `bundle update github-pages`.
+gem "jekyll", "~> 4.3.0"
+gem "liquid", "~> 5.0.0"
 
 gem "github-pages", group: :jekyll_plugins
 # Use the Cayman theme
