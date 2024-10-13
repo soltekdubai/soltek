@@ -5,6 +5,11 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3.0"
 gem "liquid", "~> 5.0.0"
 
+#explicit 
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+
 gem "github-pages", group: :jekyll_plugins
 # Use the Cayman theme
 gem "jekyll-theme-cayman", "~> 0.1.1"
