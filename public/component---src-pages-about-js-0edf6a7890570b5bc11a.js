@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkSolTek=self.webpackChunkSolTek||[]).push([[432],{9434:function(e,l,t){t.r(l);var a=t(6540);l.default=()=>a.createElement("div",null,a.createElement("h1",{className:"text-4xl"},"About SolTek"),a.createElement("p",null,"SolTek is dedicated to providing innovative and sustainable solar energy solutions across the UAE."))}}]);
+//# sourceMappingURL=component---src-pages-about-js-0edf6a7890570b5bc11a.js.map

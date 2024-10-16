@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkSolTek=self.webpackChunkSolTek||[]).push([[371],{4355:function(e,l,t){t.r(l);var n=t(6540);l.default=()=>n.createElement("div",null,n.createElement("h1",{className:"text-4xl"},"Our Services"),n.createElement("ul",null,n.createElement("li",null,"Solar Field Service Maintenance"),n.createElement("li",null,"Consulting & Data Loss Troubleshooting"),n.createElement("li",null,"System Optimization")))}}]);
+//# sourceMappingURL=component---src-pages-services-js-fdbefe4f1ab1cac72161.js.map
