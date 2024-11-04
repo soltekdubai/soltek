@@ -1,0 +1,106 @@
+/* Add your global styles here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root Variables for Colors */
+:root {
+  --background: #1b2a49;
+  --foreground: #ededed;
+  --accent-orange: #e2952e;
+  --accent-blue: #4a90e2;
+  --accent-green: #50c878;
+}
+
+/* Base Body Styling */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Gradient Backgrounds for Specific Sections */
+.bg-about {
+  background: linear-gradient(to bottom right, var(--background), #0e1b34);
+}
+
+.bg-mission {
+  background: linear-gradient(to bottom right, var(--accent-orange), #ffb04d);
+}
+
+.bg-vision {
+  background: linear-gradient(to bottom right, var(--accent-blue), #007AFF);
+}
+
+.bg-values {
+  background: linear-gradient(to bottom right, var(--accent-green), #3cb371);
+}
+
+/* Primary Button Styling */
+.primary-button {
+  background: linear-gradient(135deg, var(--accent-orange), #ffb04d);
+  color: black;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.primary-button:hover {
+  background: linear-gradient(135deg, #ffb04d, var(--accent-orange));
+  transform: scale(1.05);
+}
+
+/* Section Card Styling */
+.section-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Team Member Styling */
+.team-card {
+  text-align: center;
+  background: linear-gradient(135deg, var(--accent-orange), #ffb04d);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+/* Icon Styling for Consistent Sizing */
+.icon-large {
+  width: 60px;
+  height: 60px;
+}
+
+/* Utility Classes */
+.text-accent-orange {
+  color: var(--accent-orange);
+}
+.text-accent-blue {
+  color: var(--accent-blue);
+}
+.text-accent-green {
+  color: var(--accent-green);
+}
+
+/* Container and Spacing Adjustments */
+.section-spacing {
+  padding: 2rem 0;
+}
