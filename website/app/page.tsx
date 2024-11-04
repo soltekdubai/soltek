@@ -25,38 +25,29 @@ const Home: FC = () => {
         </div>
       </header>
 
-      {/* About Section */}
-      <section className="text-center space-y-6">
-        <h2 className="text-5xl font-bold text-[#e2952e]">About SolTek</h2>
-        <p className="text-lg max-w-2xl mx-auto text-[#f5f5f5]">
-          SolTek is a leader in sustainable energy solutions, offering consulting, field services, and innovative technology to drive renewable energy adoption across the UAE.
-        </p>
-      </section>
-
-      {/* Mission Section */}
-      <section className="section-card flex flex-col md:flex-row items-center gap-8 p-8">
-        <Image src="/mission-stock.jpg" alt="Mission Image" width={400} height={300} className="rounded-lg object-cover" />
-        <div>
-          <h2 className="text-4xl font-bold text-[#e2952e]">Our Mission</h2>
-          <p className="text-lg text-[#f5f5f5] mt-4">
+      {/* Side-by-Side Mission and Vision Sections */}
+      <section className="flex flex-col lg:flex-row gap-8 items-start">
+        {/* Mission Section */}
+        <div className="section-card flex-1 p-6 space-y-4">
+          <Image src="/mission.jpg" alt="Mission Image" width={400} height={300} className="rounded-lg object-cover" />
+          <h2 className="text-3xl font-bold text-[#e2952e]">Our Mission</h2>
+          <p className="text-lg text-[#f5f5f5]">
             Our mission is to drive sustainable energy adoption by delivering reliable, efficient, and innovative solar solutions for individuals and businesses alike.
           </p>
         </div>
-      </section>
 
-      {/* Vision Section */}
-      <section className="section-card flex flex-col md:flex-row items-center gap-8 p-8">
-        <Image src="/vision-stock.jpg" alt="Vision Image" width={400} height={300} className="rounded-lg object-cover" />
-        <div>
-          <h2 className="text-4xl font-bold text-[#e2952e]">Our Vision</h2>
-          <p className="text-lg text-[#f5f5f5] mt-4">
+        {/* Vision Section */}
+        <div className="section-card flex-1 p-6 space-y-4">
+          <Image src="/vision.jpg" alt="Vision Image" width={400} height={300} className="rounded-lg object-cover" />
+          <h2 className="text-3xl font-bold text-[#e2952e]">Our Vision</h2>
+          <p className="text-lg text-[#f5f5f5]">
             We envision a world where sustainable energy solutions are accessible, efficient, and affordable. SolTek is committed to advancing renewable energy through innovation and excellence.
           </p>
         </div>
       </section>
 
       {/* Values Section */}
-      <section className="text-center space-y-8 mb-16"> {/* Added mb-16 for extra bottom margin */}
+      <section className="text-center space-y-8 mb-16">
         <h2 className="text-4xl font-bold text-[#e2952e]">Our Core Values</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="section-card p-6 text-center">
@@ -80,14 +71,14 @@ const Home: FC = () => {
         </div>
       </section>
 
-
-      {/* Call to Action Button */}
-      <div className="text-center mt-20"> {/* Increased mt-20 */}
+      {/* Call to Action */}
+      <div className="text-center mt-16">
         <a href="/contact" className="primary-button">
           Contact Us to Learn More
         </a>
       </div>
-      );
+    </div>
+  );
 };
 
-      export default Home;
+export default Home;
