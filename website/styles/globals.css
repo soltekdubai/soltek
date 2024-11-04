@@ -1,46 +1,48 @@
-/* Add your global styles here */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Root Variables for Colors */
+/* Root Variables */
 :root {
   --background: #1b2a49;
-  --foreground: #ededed;
+  --foreground: #f5f5f5;
   --accent-orange: #e2952e;
-  --accent-blue: #4a90e2;
-  --accent-green: #50c878;
+  --dark-blue: #2a3b65;
 }
 
-/* Base Body Styling */
+/* Base Styling */
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
 }
 
-/* Gradient Backgrounds for Specific Sections */
-.bg-about {
-  background: linear-gradient(to bottom right, var(--background), #0e1b34);
+/* Banner Styling */
+.banner {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+}
+.banner .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--background), #0e1b34);
+  opacity: 0.9;
+  z-index: 1;
+}
+.banner h1,
+.banner p {
+  z-index: 10;
 }
 
-.bg-mission {
-  background: linear-gradient(to bottom right, var(--accent-orange), #ffb04d);
-}
-
-.bg-vision {
-  background: linear-gradient(to bottom right, var(--accent-blue), #007AFF);
-}
-
-.bg-values {
-  background: linear-gradient(to bottom right, var(--accent-green), #3cb371);
-}
-
-/* Primary Button Styling */
+/* Button Styling */
 .primary-button {
   background: linear-gradient(135deg, var(--accent-orange), #ffb04d);
-  color: black;
+  color: #1b2a49;
   font-weight: bold;
   padding: 1rem 2rem;
   font-size: 1.125rem;
@@ -67,40 +69,16 @@ body {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Team Member Styling */
-.team-card {
-  text-align: center;
-  background: linear-gradient(135deg, var(--accent-orange), #ffb04d);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.team-card img {
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-.team-card:hover {
-  transform: scale(1.05);
-}
-
-/* Icon Styling for Consistent Sizing */
-.icon-large {
-  width: 60px;
-  height: 60px;
-}
-
 /* Utility Classes */
 .text-accent-orange {
   color: var(--accent-orange);
 }
-.text-accent-blue {
-  color: var(--accent-blue);
-}
-.text-accent-green {
-  color: var(--accent-green);
+.text-dark-blue {
+  color: var(--dark-blue);
 }
 
-/* Container and Spacing Adjustments */
-.section-spacing {
-  padding: 2rem 0;
+/* Image Styling */
+.banner img {
+  object-fit: cover;
+  opacity: 0.8;
 }

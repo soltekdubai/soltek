@@ -1,87 +1,94 @@
 import Image from "next/image";
-import Link from "next/link";
+import { FC } from "react";
 import "./globals.css";
 
-export default function Home() {
+const Home: FC = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-gradient-to-br from-[#1b2a49] via-[#2a3b65] to-[#0e1b34] text-white">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start text-center sm:text-left">
+    <div className="min-h-screen text-white space-y-20 bg-gradient-to-br from-[#1b2a49] via-[#2a3b65] to-[#0e1b34] p-8 sm:p-20">
+      {/* Banner Section with Gradient Overlay and Background Image */}
+      <header className="banner min-h-[400px] flex flex-col items-center justify-center text-center relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1b2a49] to-[#0e1b34] opacity-90"></div>
         <Image
-          src="/soltek-logo.png"
-          alt="SolTek Logo"
-          width={300}
-          height={64}
-          priority
+          src="/background-image.jpg" // Replace with your actual banner image
+          alt="Banner Background"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="z-0"
         />
+        <div className="relative z-10">
+          <Image src="/soltek-logo.png" alt="SolTek Logo" width={300} height={80} priority />
+          <h1 className="text-4xl font-bold mt-4 text-[#e2952e]">Sustainable Energy Solutions for the UAE</h1>
+          <p className="text-lg mt-4 max-w-xl mx-auto text-[#f5f5f5]">
+            Empowering sustainable energy initiatives through innovative solar technology and field services.
+          </p>
+        </div>
+      </header>
 
-        <p className="text-2xl font-semibold text-[#e2952e]">
-          Sustainable Energy Solutions for the UAE
+      {/* About Section */}
+      <section className="text-center space-y-6">
+        <h2 className="text-5xl font-bold text-[#e2952e]">About SolTek</h2>
+        <p className="text-lg max-w-2xl mx-auto text-[#f5f5f5]">
+          SolTek is a leader in sustainable energy solutions, offering consulting, field services, and innovative technology to drive renewable energy adoption across the UAE.
         </p>
+      </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left">
-          <div className="bg-white bg-opacity-10 rounded-lg p-6 shadow-lg transform hover:scale-105 transition-transform">
-            <Image src="/solar-panel.svg" alt="Solar Panel Icon" width={40} height={40} />
-            <h3 className="text-lg font-bold mt-4 text-[#e2952e]">Consulting Services</h3>
-            <p className="text-sm mt-2 text-[#f5f5f5]">
-              Discover our solar consulting services tailored for sustainable growth in the UAE.
+      {/* Mission Section */}
+      <section className="section-card flex flex-col md:flex-row items-center gap-8 p-8">
+        <Image src="/mission-stock.jpg" alt="Mission Image" width={400} height={300} className="rounded-lg object-cover" />
+        <div>
+          <h2 className="text-4xl font-bold text-[#e2952e]">Our Mission</h2>
+          <p className="text-lg text-[#f5f5f5] mt-4">
+            Our mission is to drive sustainable energy adoption by delivering reliable, efficient, and innovative solar solutions for individuals and businesses alike.
+          </p>
+        </div>
+      </section>
+
+      {/* Vision Section */}
+      <section className="section-card flex flex-col md:flex-row items-center gap-8 p-8">
+        <Image src="/vision-stock.jpg" alt="Vision Image" width={400} height={300} className="rounded-lg object-cover" />
+        <div>
+          <h2 className="text-4xl font-bold text-[#e2952e]">Our Vision</h2>
+          <p className="text-lg text-[#f5f5f5] mt-4">
+            We envision a world where sustainable energy solutions are accessible, efficient, and affordable. SolTek is committed to advancing renewable energy through innovation and excellence.
+          </p>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="text-center space-y-8 mb-16"> {/* Added mb-16 for extra bottom margin */}
+        <h2 className="text-4xl font-bold text-[#e2952e]">Our Core Values</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="section-card p-6 text-center">
+            <h3 className="text-2xl font-bold text-[#1b2a49] mb-4">Integrity</h3>
+            <p className="text-lg text-[#f5f5f5]">
+              We prioritize honesty and transparency, building trust with our clients and partners.
             </p>
           </div>
-          <div className="bg-white bg-opacity-10 rounded-lg p-6 shadow-lg transform hover:scale-105 transition-transform">
-            <Image src="/field-service.svg" alt="Field Service Icon" width={40} height={40} />
-            <h3 className="text-lg font-bold mt-4 text-[#e2952e]">Field Services</h3>
-            <p className="text-sm mt-2 text-[#f5f5f5]">
-              Benefit from our field services, offering maintenance and repair for solar systems.
+          <div className="section-card p-6 text-center">
+            <h3 className="text-2xl font-bold text-[#1b2a49] mb-4">Innovation</h3>
+            <p className="text-lg text-[#f5f5f5]">
+              We constantly push boundaries to create advanced and sustainable energy solutions.
             </p>
           </div>
-          <div className="bg-white bg-opacity-10 rounded-lg p-6 shadow-lg transform hover:scale-105 transition-transform">
-            <Image src="/innovation.svg" alt="Innovation Icon" width={40} height={40} />
-            <h3 className="text-lg font-bold mt-4 text-[#e2952e]">Innovative Solutions</h3>
-            <p className="text-sm mt-2 text-[#f5f5f5]">
-              Learn how SolTek supports innovative energy solutions across the region.
+          <div className="section-card p-6 text-center">
+            <h3 className="text-2xl font-bold text-[#1b2a49] mb-4">Excellence</h3>
+            <p className="text-lg text-[#f5f5f5]">
+              We hold ourselves to the highest standards, ensuring exceptional results in every project.
             </p>
           </div>
         </div>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row mt-8">
-          <Link href="/services" 
-            className="rounded-full border border-transparent transition-colors flex items-center justify-center bg-[#e2952e] text-[#1b2a49] font-semibold hover:bg-[#ffb04d] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5">
-            Explore Our Services
-          </Link>
-          <Link href="/about" 
-            className="rounded-full border border-solid border-[#e2952e] transition-colors flex items-center justify-center bg-transparent text-[#e2952e] font-semibold hover:bg-[#ffb04d] hover:text-[#1b2a49] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44">
-            About Us
-          </Link>
-        </div>
-      </main>
 
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center text-[#e0e0e0] mt-8">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="/contact"
-        >
-          <Image
-            aria-hidden
-            src="/contact-icon.svg"
-            alt="Contact icon"
-            width={16}
-            height={16}
-          />
-          Contact Us
+      {/* Call to Action */}
+      <div className="text-center mt-16">
+        <a href="/contact" className="primary-button">
+          Contact Us to Learn More
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="/investors"
-        >
-          <Image
-            aria-hidden
-            src="/investor-icon.svg"
-            alt="Investor icon"
-            width={16}
-            height={16}
-          />
-          Investor Information
-        </a>
-      </footer>
+      </div>
     </div>
   );
-}
+};
+
+export default Home;
