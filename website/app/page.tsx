@@ -81,14 +81,13 @@ const Home: FC = () => {
       </section>
 
 
-      {/* Call to Action */}
-      <div className="text-center mt-16">
+      {/* Call to Action Button */}
+      <div className="text-center mt-20"> {/* Increased mt-20 */}
         <a href="/contact" className="primary-button">
           Contact Us to Learn More
         </a>
       </div>
-    </div>
-  );
+      );
 };
 
-export default Home;
+      export default Home;
