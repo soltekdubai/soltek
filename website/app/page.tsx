@@ -25,10 +25,10 @@ const Home: FC = () => {
         </div>
       </header>
 
-      {/* Side-by-Side Mission and Vision Sections */}
-      <section className="flex flex-col lg:flex-row gap-8 items-start">
+      {/* Side-by-Side Mission and Vision Sections with CSS Grid */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         {/* Mission Section */}
-        <div className="section-card flex-1 p-6 space-y-4">
+        <div className="section-card p-6 space-y-4">
           <Image src="/mission.jpg" alt="Mission Image" width={400} height={300} className="rounded-lg object-cover" />
           <h2 className="text-3xl font-bold text-[#e2952e]">Our Mission</h2>
           <p className="text-lg text-[#f5f5f5]">
@@ -37,7 +37,7 @@ const Home: FC = () => {
         </div>
 
         {/* Vision Section */}
-        <div className="section-card flex-1 p-6 space-y-4">
+        <div className="section-card p-6 space-y-4">
           <Image src="/vision.jpg" alt="Vision Image" width={400} height={300} className="rounded-lg object-cover" />
           <h2 className="text-3xl font-bold text-[#e2952e]">Our Vision</h2>
           <p className="text-lg text-[#f5f5f5]">
