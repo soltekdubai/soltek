@@ -1,0 +1,98 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Services",
+      "url": "/services"
+    },
+    {
+      "name": "About Us",
+      "url": "/about"
+    },
+    {
+      "name": "Investors",
+      "url": "/investors"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Company",
+      "menu": [
+        {
+          "text": "About Us",
+          "url": "/about"
+        },
+        {
+          "text": "Our Mission",
+          "url": "/about#mission"
+        },
+        {
+          "text": "Our Vision",
+          "url": "/about#vision"
+        },
+        {
+          "text": "Core Values",
+          "url": "/about#values"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "menu": [
+        {
+          "text": "Consulting",
+          "url": "/services#consulting"
+        },
+        {
+          "text": "Field Services",
+          "url": "/services#field-services"
+        },
+        {
+          "text": "Innovation",
+          "url": "/services#innovation"
+        }
+      ]
+    },
+    {
+      "name": "Support",
+      "menu": [
+        {
+          "text": "FAQ",
+          "url": "/faq"
+        },
+        {
+          "text": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "text": "Terms & Conditions",
+          "url": "/terms-and-conditions"
+        }
+      ]
+    },
+    {
+      "name": "Investors",
+      "menu": [
+        {
+          "text": "Investor Information",
+          "url": "/investors"
+        },
+        {
+          "text": "Financial Reports",
+          "url": "/investors#financial-reports"
+        },
+        {
+          "text": "Corporate Governance",
+          "url": "/investors#corporate-governance"
+        }
+      ]
+    }
+  ]
+}
