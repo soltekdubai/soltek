@@ -19,14 +19,14 @@ const HomeBanner = ({ banner }) => {
                 {banner.button.label}
               </Link>
             )}
-            <Image
+            {/*<Image
               className="mx-auto mt-12"
               src={banner.image}
               width={750}
               height={390}
               alt="banner image"
               priority
-            />
+            />*/}
           </div>
         </div>
       </div>
